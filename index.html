@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App by Rachmat Ghaly</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="search">
+        <i class="fa-sharp fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="Enter your location" />
+        <button class="fa-solid fa-magnifying-glass"></button>
+      </div>
+
+      <div class="location-not-found">
+        <lottie-player
+          src="https://assets4.lottiefiles.com/packages/lf20_m6k6uhad.json"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 300px"
+          loop
+          autoplay
+        ></lottie-player>
+        <p>Oops! Location is not Found :(</p>
+      </div>
+
+      <div class="weather-box">
+        <img src="" alt="" />
+        <p class="temperature"></p>
+        <p class="description"></p>
+      </div>
+    </main>
+  </body>
+</html>
