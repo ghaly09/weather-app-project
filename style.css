@@ -47,3 +47,16 @@ body {
   text-transform: uppercase;
   padding-left: 32px;
 }
+
+.weather-box .temperature span {
+  position: absolute;
+  margin-left: 4px;
+  font-size: 1.5rem;
+}
+
+.weather-box .description {
+  color: #0e1111;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
