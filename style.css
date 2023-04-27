@@ -12,6 +12,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* background-image: url("assets/image/space-background_1.gif"); */
+  /* background-image: url(""); */
+  /* background-color: rgb(50, 31, 101);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 1600px; */
 }
 
 .container {
@@ -24,6 +31,7 @@ body {
   border-radius: 18px;
   font-family: "Roboto", sans-serif;
   transition: 0.6s ease-out;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 
 .search {
@@ -72,4 +80,26 @@ body {
 .weather-box img {
   width: 60%;
   margin-top: 30px;
+}
+
+.weather-box .temperature {
+  position: relative;
+  color: #0e1111;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-top: 30px;
+  margin-left: -16px;
+}
+
+.weather-box .temperature span {
+  position: absolute;
+  margin-left: 4px;
+  font-size: 1.5rem;
+}
+
+.weather-box .description {
+  color: #0e1111;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
 }
