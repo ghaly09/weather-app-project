@@ -48,15 +48,28 @@ body {
   padding-left: 32px;
 }
 
-.weather-box .temperature span {
-  position: absolute;
-  margin-left: 4px;
-  font-size: 1.5rem;
+.search button {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  color: #0e1111;
+  background-color: rgb(237, 227, 245);
+  border-radius: 50%;
+  font-size: 22px;
+  transition: 0.4s ease;
 }
 
-.weather-box .description {
-  color: #0e1111;
-  font-size: 22px;
-  font-weight: 500;
-  text-transform: capitalize;
+.search button:hover {
+  color: #fff;
+  background-color: rgb(115, 61, 168);
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box img {
+  width: 60%;
+  margin-top: 30px;
 }
