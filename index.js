@@ -10,7 +10,7 @@ search.addEventListener("click", () => {
   // Put the API key that you've gotten from openweather API
   const APIkey = "be76e3838685072f9333dd196c16bd50";
   // Get input value from page
-  const location = document.querySelector(".search-box input").value;
+  const location = document.querySelector(".search input").value;
   // Condition when location is fulfilled or empty
   if (location === "") return;
   // Fetching the API data from openweatherapi
@@ -20,6 +20,7 @@ search.addEventListener("click", () => {
     .then((response) => response.json())
     .then((result) => {
       // Condition when it's error 404
+      console.log(result);
       if (result.cod === "404") {
         container.style.height = "400px";
         weatherBox.style.display = "none";
@@ -35,28 +36,30 @@ search.addEventListener("click", () => {
       const image = document.querySelector(".weather-box img");
       const temperature = document.querySelector(".weather-box .temperature");
       const description = document.querySelector(".weather-box .description");
-      const humidity = document.querySelector(".weather-box .humidity span");
-      const wind = document.querySelector(".weather-box .wind span");
+      const humidity = document.querySelector(
+        ".weather-details .humidity span"
+      );
+      const wind = document.querySelector(".weather-details .wind span");
 
       switch (result.weather[0].main) {
         case "Clear":
-          image.src = "assets/image/clear.png";
+          image.src = "assets/images/clear.gif";
           break;
 
         case "Rain":
-          image.src = "assets/image/rain.png";
+          image.src = "assets/images/rain.gif";
           break;
 
         case "Snow":
-          image.src = "assets/image/snow.png";
+          image.src = "assets/images/snow.gif";
           break;
 
         case "Clouds":
-          image.src = "assets/image/clouds.png";
+          image.src = "assets/images/clouds.gif";
           break;
 
         case "Haze":
-          image.src = "assets/image/haze.png";
+          image.src = "assets/images/haze.gif";
           break;
 
         default:
@@ -70,6 +73,7 @@ search.addEventListener("click", () => {
 
       weatherBox.style.display = "";
       weatherDetails.style.display = "";
+      weatherDetails.classList.add("fadeIn");
       weatherBox.classList.add("fadeIn");
       container.style.height = "590px";
     });
