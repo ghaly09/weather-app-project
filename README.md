@@ -8,4 +8,4 @@ Javascript project 2, I try to make more project about javascript to practice my
 
 You can type the country for checking the Weather
 
-![Preview Result](assets/image/result-input.png)
+![Preview Result](assets/images/result-input.png)
