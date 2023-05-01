@@ -168,16 +168,26 @@ body {
   font-weight: 500;
 }
 
+.copyright {
+  margin-top: 35px;
+  scale: 0;
+  opacity: 0;
+  font-size: 12px;
+  text-align: center;
+  color: rgb(115, 61, 168);
+}
+
 .location-not-found {
   width: 100%;
-  text-align: center;
-  margin-top: 50px;
+  margin-top: 5px;
   scale: 0;
   opacity: 0;
   display: none;
+  flex-direction: column;
+  align-items: center;
 }
 
-.location-not-found img {
+.location-not-found lottie-player {
   width: 70%;
 }
 
@@ -185,7 +195,6 @@ body {
   color: #0e1111;
   font-size: 22px;
   font-weight: 500;
-  margin-top: 12px;
 }
 
 .weather-box,
